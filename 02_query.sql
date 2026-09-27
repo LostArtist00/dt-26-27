@@ -3,7 +3,7 @@ SELECT
     customers.customer_name,
     orders.sales
 FROM orders
-INNER JOIN customers
+JOIN customers
     ON orders.customer_id = customers.customer_id
 WHERE orders.sales > 500
 ORDER BY orders.sales DESC;
