@@ -20,7 +20,7 @@ FROM ranked_orders
 WHERE rn <= 2
 ORDER BY customer_name, rn;
 
-;WITH ranked_orders AS (
+WITH ranked_orders AS (
     SELECT
         c.customer_name,
         o.order_id,
@@ -35,4 +35,4 @@ ORDER BY customer_name, rn;
 )
 SELECT COUNT(*) AS pocet_zaznamov
 FROM ranked_orders
-WHERE rn <= 2;
+WHERE rn <= 2; 
